@@ -27,3 +27,19 @@
   margin-top: 50px;
   color: #333;
 }
+
+#output h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: black;
+  margin-bottom: 1rem;
+  background: rgb(131,58,180);
+  background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+
+#output div {
+  font-size: 4rem;
+  color: rgb(117, 101, 162);
+  padding: 0.5rem;
+  background-color: rgb(155, 216, 196);
+}
