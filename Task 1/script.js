@@ -18,15 +18,16 @@ document.getElementById('submit-btn').addEventListener('click', (event) => {
 
     const multiplyWeight = () => {
         const weightKg = document.getElementById('search').value;
+
         if (weightKg > 0) {
             let lb = 2.2406;
             let g = 0.0010000;
             let oz = 35.274;
-            
+
             let convertedLb = Math.round(weightKg * lb);
             let convertedG = Math.round(weightKg / g);
             let convertedOz = Math.round(weightKg * oz);
-        
+
             results.innerText =`Weight in grams: ${convertedG}g, weight in lb: ${convertedLb}lb, weight in oz: ${convertedOz}oz.`;
 
         } else {
@@ -35,4 +36,5 @@ document.getElementById('submit-btn').addEventListener('click', (event) => {
     }
 
     multiplyWeight(results);
+
 });
