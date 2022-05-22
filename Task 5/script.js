@@ -19,3 +19,30 @@ const users = [
   { id: '8', name: 'Simon Peterson', age: 30, hasDog: false },
   { id: '9', name: 'Daniel Cane', age: 51, hasDog: true },
 ];
+
+const filterDogOwers = (array) => {
+  const newUsers = [];
+
+  for (const dog of array) {
+    if (dog.hasDog === true) {
+      newUsers.push({id:dog.id, name:dog.name, age:dog.age, hasDog:dog.hasDog});
+    }
+  }
+  console.log(newUsers);
+};
+
+
+const filterAdults = (array) => {
+  const newAge = [];
+
+  for ( const userAge of array) {
+    if (userAge.age >= 18) {
+       newAge.push({id:userAge.id, name:userAge.name, age:userAge.age, hasDog:userAge.hasDog});
+    }
+  }
+  console.log(newAge);
+};
+
+filterDogOwers(users);
+filterAdults(users);
+
