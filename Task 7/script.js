@@ -11,9 +11,10 @@ const audi = {
   color: 'white',
 };
  
-const showObjectKeys = () => {
-  const bmw = Object.keys(audi);
-  console.log(bmw);
+const showObjectKeys = (audi) => {
+  return Object.keys(audi);
 };
 
-showObjectKeys();
+const bmw = showObjectKeys(audi);
+
+console.log(bmw);
